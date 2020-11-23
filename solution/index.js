@@ -52,8 +52,8 @@ const plusMinus = require('./plusMinus');
 // stairCase(5);
 
 module.exports = {
-  gradingStudents,
-  miniMaxSum,
-  plusMinus,
-  stairCase,
+    gradingStudents,
+    miniMaxSum,
+    plusMinus,
+    stairCase,
 };

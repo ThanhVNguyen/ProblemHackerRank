@@ -14,17 +14,17 @@
 // }
 // console.log
 function gradingStudents(grades) {
-  const gradingScore = [];
-  let score = 0;
-  for (let i = 0; i < grades.length; i += 1) {
-    if (grades[i] % 5 >= 3 && grades[i] >= 38) {
-      score = (Math.floor(grades[i] / 5)) * 5 + 5;
-    } else {
-      score = grades[i];
+    const gradingScore = [];
+    let score = 0;
+    for (let i = 0; i < grades.length; i += 1) {
+        if (grades[i] % 5 >= 3 && grades[i] >= 38) {
+            score = (Math.floor(grades[i] / 5)) * 5 + 5;
+        } else {
+            score = grades[i];
+        }
+        gradingScore.push(score);
     }
-    gradingScore.push(score);
-  }
-  return gradingScore;
+    return gradingScore;
 }
 
 module.exports = gradingStudents;
